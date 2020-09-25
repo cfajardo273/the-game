@@ -15,4 +15,23 @@ picture {
 body {
   font-size: 100%;
   background-color: aquamarine;
+  padding:50px;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px;
+  background-color: black;    // Revisar porque no sale la linea vertical derecha. Posibilidad de cambiarlo a flex 
+  padding: 5px;
+  grid-gap: 1px;
+  width:242px;    
+ }
+
+ .box {
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+ }
