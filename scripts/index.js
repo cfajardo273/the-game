@@ -1,15 +1,25 @@
 // Elemento
 
-    // establecer las celdas de 0 a 8
-    // tienen que aparecer los movientos en la pantalla
-    // siempre se inica el juego con la X
+
+
+
+
+// Elemento
+const turno = 1;
+const queturno;
+const juegotres = new Array(9);
 
 
 // Evento
-
-   // la lógica sería si 0-1-2, 3-4-5, 6,7,8, hasta la útima combinacion ganadora  son true, todo el resto es false. Buscar fórmula
-   // desabilitar  el contenido de la casilla una vez este ocupada
+function raya() {
 
 
-// Ejecución
+}
+function cargarJuego() {
+  document.getElementById("c1").addEventListener("click", raya);
 
+}
+
+// Ejecución 
+
+window.addEventListener("load", cargarJuego);
