@@ -3,8 +3,8 @@ const cells = Array.from(document.querySelectorAll('.grid > div'));
 const playerXScoreElement = document.getElementById('player-x-score');
 const playerOScoreElement = document.getElementById('player-o-score');
 
-const winnerDisplay = document.querySelector('.main');
-const winnerDisplayP = document.querySelector('.main > aside > p');
+const winnerDisplay = document.querySelector('.grid');
+const winnerDisplayP = document.querySelector('.grid > aside > p');
 
 const solutions = [
   [0, 1, 2],
@@ -63,7 +63,7 @@ const addScore = (player) => {
 
 const showWinner = (player) => {
   winnerDisplay.classList.add('winner');
-  winnerDisplayP.innertext = player;
+  winnerDisplayP.innerText = player;
 };
 
 // 3. a cada cell que es cliqueada se corre lo siguiente
