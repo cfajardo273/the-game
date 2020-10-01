@@ -75,16 +75,17 @@ h1 {
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
   display: none;
-}
+   }
 
 .grid aside button {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 300;
   font-size: 1rem;
   margin-left: auto;
   margin-right: auto;
   width: 6em;
+  padding-top: 18px;
 }
 
 .grid aside h2 {
@@ -98,4 +99,28 @@ h1 {
 
 .grid.winner aside {
   display: block;
-}
+ }
+
+button {
+text-align: center;
+margin-top: 0;
+background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+background-color:#44c767;
+border-radius: 25px;
+border:2px solid #18ab29;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:arial;
+font-size:17px;
+font-weight:bold;
+padding:13px 31px;
+text-decoration:none;
+text-shadow: 1px 1px 6px #2f6627;
+margin-left: 500px;
+};
+
+bottom hover {
+  background: linear-gradient(to button, #5cbf2a 5%, #44c767 100%);
+  background-color:#5cbf2a; 
+};
