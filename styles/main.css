@@ -1,9 +1,8 @@
 * {
   box-sizing: border-box;
-
 }
 image {
-  display: block ;
+  display: block;
   height: auto;
   max-width: 100%;
 }
@@ -23,17 +22,17 @@ section {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  text-align:center;
+  text-align: center;
   font-size: 75px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgba(00, 00, 00, 0.9)
+  color: rgba(00, 00, 00, 0.9);
 }
 
 section > div {
   flex-basis: 27%;
   height: 08vw;
   color: grey;
- }
+}
 
 section > div:nth-last-of-type(5) {
   border: 5px solid;
@@ -45,7 +44,7 @@ section > div:nth-last-of-type(8) {
   border-left: 5px solid;
   border-right: 5px solid;
   color: grey;
- }
+}
 
 section > div:nth-last-of-type(4),
 section > div:nth-last-of-type(6) {
@@ -55,46 +54,48 @@ section > div:nth-last-of-type(6) {
 }
 
 h1 {
-  font-size: 55px; 
+  font-size: 55px;
   margin-left: 45px;
   padding-top: 0px;
-  font-family: 'calibri light', 'Cambria', 'comic sans', 'Georgia', 'Times New Roman';
+  font-family: 'calibri light', 'Cambria', 'comic sans', 'Georgia',
+    'Times New Roman';
   font-size: 4rem;
   margin-bottom: 0.5em;
-  
 }
 
+.grid {
+  position: relative;
+}
 
-.aside {
+.grid aside {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  display:none;
+  display: none;
 }
 
-.aside button {
+.grid aside button {
   position: absolute;
   top: 0;
   right: 300;
   font-size: 1rem;
   margin-left: auto;
-	margin-right: auto;
-	width: 6em
- }
+  margin-right: auto;
+  width: 6em;
+}
 
-.main aside h2 {
+.grid aside h2 {
   font-size: 1.75rem;
 }
 
-.main aside p {
+.grid aside p {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.main aside {
+.grid.winner aside {
   display: block;
 }
-
