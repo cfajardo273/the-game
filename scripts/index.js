@@ -5,6 +5,9 @@ const playerOScoreElement = document.getElementById('player-o-score');
 
 const winnerDisplay = document.querySelector('.grid');
 const winnerDisplayP = document.querySelector('.grid > aside > p');
+const winnerDisplayCloseButton = document.querySelector(
+  '.grid > aside > button',
+);
 
 const solutions = [
   [0, 1, 2],
@@ -86,7 +89,6 @@ const handleClick = (event) => {
   // identificadas en uno de los arrayes de solucion declaro ganador
 
   const ifPlayerWin = checkIfPlayerWin(playerTurn);
-  console.log(cells);
   // Mostrar ganador en pantalla
   if (ifPlayerWin) {
     // 4. Suma + 1 al jugador ganador
@@ -119,8 +121,21 @@ function playNewGame() {
   /* document.querySelector('.boardtic').classList.remove('.boardtic'); */
   cells.forEach((cell) => (cell.innerText = ''));
   board = [null, null, null, null, null, null, null, null, null];
-  playerTurn = 'X';
+  playerTurn = 'x';
   cells.forEach(addHandleClick);
+}
+
+// ***************************** /
+// cerrar pantalla ganadora
+// ***************************** /
+
+winnerDisplayCloseButton.addEventListener('click', closeWinnerDisplay);
+
+// Ejecucion
+
+function closeWinnerDisplay(event) {
+  winnerDisplay.classList.remove('winner');
+  playNewGame();
 }
 
 // TODO:
