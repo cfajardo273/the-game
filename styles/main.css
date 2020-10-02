@@ -17,6 +17,16 @@ body {
   font-family: 16px;
 }
 
+h1 {
+  color: rgba(17, 17, 17, 0.781);
+  margin: auto;
+  font-size: 35px;
+  font-family: "Impact";
+  background-position: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
  section {
   width: 75%;
   margin: 0 auto;
@@ -53,15 +63,6 @@ section > div:nth-last-of-type(6) {
   color: grey;
 }
 
-h1 {
-  color: rgba(44, 39, 39, 0.548)
-  margin: auto;
-  font-size: 32px;
-  font-family: 'Dancing Script, cursive'
-  background-position: center center;
-  padding-left: 450px;
-  margin-bottom: 30px;
-}
 
 .grid {
   position: relative;
@@ -140,22 +141,18 @@ margin-bottom: 0px;
 margin-top: 0px;
 padding-right: 5px;
 padding-left: 1000px;
-font-size:20;
+font-size: 22px;
+color:color: rgba(17, 17, 17, 0.781);
 }
 
 aside h2 {
 padding-left: 1000px;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 32px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+font-size: 30px;
+color: color:color: rgba(17, 17, 17, 0.781);
 }
 
 aside button {
 margin-left: 500;
 }
 
-.mafalda {
-  width: 10%;
-  margin-left:0;
-  display: block;
-  padding-bottom: 0;
-}
